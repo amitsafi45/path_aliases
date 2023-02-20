@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["es5", "es6"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+   
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es6",
+    "types": ["node"]
+  },
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
